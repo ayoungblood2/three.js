@@ -483,7 +483,7 @@
 				object.customDepthMaterial = new THREE.MeshDepthMaterial( {
 					depthPacking: THREE.RGBADepthPacking,
 					map: clothTexture,
-					alphaTest: 0.5
+					alphaTest: 0.5,
 				} );
 
 				// sphere
@@ -491,7 +491,8 @@
 				var ballGeo = new THREE.SphereBufferGeometry( ballSize, 32, 16 );
 				var ballMaterial = new THREE.MeshLambertMaterial();
 
-				sphere = new THREE.Mesh( ballGeo, ballMaterial );
+
+				sphere = new THREE.Mesh( ballGeo, ballMaterial);
 				sphere.castShadow = true;
 				sphere.receiveShadow = true;
 				sphere.visible = false;
